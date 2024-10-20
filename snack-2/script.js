@@ -36,36 +36,26 @@ const teams = [{
 
 const teamsLenght = teams.length;
 
+const teams2 = [];
+
+
 for(let i = 0; i < teamsLenght; i++){
 
     teams[i].punti = getRndInteger(0, 100);
     teams[i].falli = getRndInteger(0, 100);
+
+    // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+
+
+    teams2.push({nome: teams[i].nome, falli: teams[i].falli});
+
 
 
 };
 
 console.log(teams);
 
-
-
-/* Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
-1) Creo un nuovo ciclo 'for' per creare il nuovo array senza la proprietà punti
-*/
-
-const teams2 = [];
-
-
-
-for(let i = 0; i < teamsLenght; i++){
-
-    teams2.push({nome: teams[i].nome, falli: teams[i].falli});
-
-};
-
-
 console.log(teams2);
-
-
 
 
 
