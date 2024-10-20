@@ -21,6 +21,46 @@ const bike = [{
     peso: 3
 }];
 
-console.log(bike);
 
-//Stampare a schermo la bici con peso minore.
+/* Stampare a schermo la bici con peso minore.
+Comparo i pesi di tutte le bike, salvo il penso minore
+e lo stampo a schermo. */
+
+const bikeLenght = bike.length;
+
+let lowerWeight = bike[0].peso;
+
+for(let i = 0; i < bikeLenght; i++){
+
+    console.log(`valore i ${i}`);
+
+    if(lowerWeight < bike[i].peso){
+        console.log(`valore peso ${lowerWeight}`);
+
+    } else {
+        lowerWeight = bike[i].peso;
+
+    }
+
+
+}
+
+console.log(lowerWeight);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
