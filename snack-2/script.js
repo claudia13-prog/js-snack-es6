@@ -35,6 +35,24 @@ console.log(teams);
 2) Richiamare la funzione in un ciclo 'for' che assegnerà i valori alle proprietà “punti” fatti e “falli subiti”
 */
 
+
+
 /* Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 1) Sfruttando il ciclo 'for' precedente creiamo un nuovo array con tutte le squadre senza la proprietà "punti fatti"
 */
+
+
+
+
+///////////////////////////////
+// FUNCTIONS
+/**
+ * Genera un numero intero random compreso tra min e max intrambi inclusi
+ * @param {number} min
+ * @param {number} max
+ * @returns {number}
+ */
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
+
