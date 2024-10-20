@@ -42,20 +42,29 @@ for(let i = 0; i < teamsLenght; i++){
     teams[i].punti = getRndInteger(0, 100);
     teams[i].falli = getRndInteger(0, 100);
 
-    //delete teams[i].punti;
 
-    const teams2 = teams;
+};
+
+console.log(teams);
+
+
+
+/* Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+1) Creo un nuovo ciclo 'for' precedente per eliminare la proprietà "punti fatti" dal nuovo array
+*/
+
+const teams2 = teams.slice();
+const teamsLenght2 = teams2.length;
+
+
+for(let i = 0; i < teamsLenght2; i++){
+
 
     delete teams2[i].punti;
 
 };
 
 
-
-
-/* Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
-1) Sfruttando il ciclo 'for' precedente creiamo un nuovo array con tutte le squadre senza la proprietà "punti fatti"
-*/
 
 
 console.log(teams2);
