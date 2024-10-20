@@ -30,22 +30,23 @@ const bikeLenght = bike.length;
 
 let lowerWeight = bike[0].peso;
 
-for(let i = 0; i < bikeLenght; i++){
+for(let i = 1; i < bikeLenght; i++){
+     
+    /* se si avvera la condizione per cui lowerWeight è
+    maggiore di bike[i].peso sovrascrivo il valore
+    del lowerWeight con quest'ultimo */
+  
+    if(lowerWeight > bike[i].peso){
 
-    console.log(`valore i ${i}`);
-
-    if(lowerWeight < bike[i].peso){
-        console.log(`valore peso ${lowerWeight}`);
-
-    } else {
         lowerWeight = bike[i].peso;
+    } 
 
     }
 
 
-}
 
-console.log(lowerWeight);
+
+console.log(`Il valore del peso minore è ${lowerWeight}`);
 
 
 
